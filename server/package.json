@@ -1,0 +1,38 @@
+{
+  "name": "cms-server",
+  "version": "1.0.0",
+  "description": "Construction Management System — Backend API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "migrate": "node src/db/migrate.js",
+    "seed": "node src/db/seed.js",
+    "patch:materials": "node src/db/patch_material_transactions.js",
+    "patch:estimates": "node src/db/patch_project_estimates.js",
+    "patch:catalog": "node src/db/patch_material_catalog.js",
+    "patch:ai-summaries": "node src/db/patch_project_ai_summaries.js",
+    "patch:worker-reviews": "node src/db/patch_worker_ai_reviews.js"
+  },
+  "keywords": [],
+  "author": "BuildTrack",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.18.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.0.0",
+    "cors": "^2.8.5",
+    "docx": "^9.7.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.3",
+    "pg": "^8.11.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
