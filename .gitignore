@@ -1,27 +1,19 @@
-# Dependencies
-node_modules/
-**/node_modules/
+```
+# Compiled and build artifacts
+*.pyc
+__pycache__/
 
-# Environment files
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
 .env
 .env.local
-.env.*.local
+*.env.*
 
-# Build output
-dist/
-build/
-
-# Logs
-*.log
-npm-debug.log*
-
-# Large files
-Project_video.mp4
-*.mp4
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE
+# Editors
 .vscode/
+.idea/
+```
